@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome CSS -->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="shop.css" />
+
+    <!-- Custom JS-->
+    <script> src="main.js"</script>
+
+    <!-- Test-->
+    <title>Shop</title>
+  </head>
+  <body>
+    <!-- content goes in the body -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand h1 mb-0" href="#">Shop</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Men's Wear
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="mensfull.html">Full Collection</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="mensshirts.html">Shirts</a>
+                  <a class="dropdown-item" href="menssweaters.html">Sweaters</a>
+                  <a class="dropdown-item" href="mensshorts.html">Shorts</a>
+                  <a class="dropdown-item" href="menspants.html">Pants</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Women's Wear
+              </a>
+              <ul class="dropdown-menu">
+                <li><a id="womensonly" class="dropdown-item" href="womensfull.html">Full Collection</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="womensshirts.html">Shirts</a>
+                  <a class="dropdown-item" href="womenssweaters.html">Sweaters</a>
+                  <a class="dropdown-item" href="womensshorts.html">Shorts</a>
+                  <a class="dropdown-item" href="womenspants.html">Pants</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <a id="sign-in" href="login.html">
+            <button class="btn btn-outline-primary">
+              Sign In
+            </button>
+          </a>
+          <a href="cart.html">
+            <button class="btn btn-outline-success">
+                <img id="cart-icon" src="Images/cart.png" alt="">
+              Checkout
+            </button>
+          </a>
+          
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="row mens">
+        <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3 men menshirts">
+            <div class="product"> <img src="Images/Men's Sweater.jpg" alt="">
+            </div>
+            <div class="title pt-4 pb-1">Men's Throw Sweater</div>
+            <div class="d-flex align-content-center justify-content-center"> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> </div>
+            <div class="price">$ 60.0</div>
+            <div><select class="form-select form-select-sm" aria-label=".form-select-sm">
+              <option selected>Select Size</option>
+              <option value="1">Small</option>
+              <option value="2">Medium</option>
+              <option value="3">Large</option>
+              <option value="4">X-Large</option>
+            </select></div>
+            <div><button type="button" class="btn btn-outline-success">Add To Cart</button></div>
+        </div>
+
+
+        
+        <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+            <div class="product"> <img src="Images/Men's Sweater 2.jpg" alt="">
+            </div>
+            <div class="title pt-4 pb-1">Men's Winter Sweater</div>
+            <div class="d-flex align-content-center justify-content-center"> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> </div>
+            <div class="price">$ 55.0</div>
+            <div><select class="form-select form-select-sm" aria-label=".form-select-sm">
+              <option selected>Select Size</option>
+              <option value="1">Small</option>
+              <option value="2">Medium</option>
+              <option value="3">Large</option>
+              <option value="4">X-Large</option>
+            </select></div>
+            <div><button type="button" class="btn btn-outline-success">Add To Cart</button></div>
+        </div>
+        <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+            <div class="product"> <img src="Images/Men's Shirt.jpg" alt="">
+            </div>
+            <div class="title pt-4 pb-1"> Men's Long Sleeve Shirt</div>
+            <div class="d-flex align-content-center justify-content-center"> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> </div>
+            <div class="price">$ 70.0</div>
+            <div><select class="form-select form-select-sm" aria-label=".form-select-sm">
+              <option selected>Select Size</option>
+              <option value="1">Small</option>
+              <option value="2">Medium</option>
+              <option value="3">Large</option>
+              <option value="4">X-Large</option>
+            </select></div>
+            <div><button type="button" class="btn btn-outline-success">Add To Cart</button></div>
+        </div>
+        <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+            <div class="product"> <img src="Images/Men's Shirt 2.jpg" alt="">
+            </div>
+            <div class="title pt-4 pb-1">Men's Short Sleeve Shirt</div>
+            <div class="d-flex align-content-center justify-content-center"> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> </div>
+            <div class="price">$ 60.0</div>
+            <div><select class="form-select form-select-sm" aria-label=".form-select-sm">
+              <option selected>Select Size</option>
+              <option value="1">Small</option>
+              <option value="2">Medium</option>
+              <option value="3">Large</option>
+              <option value="4">X-Large</option>
+            </select></div>
+            <div><button type="button" class="btn btn-outline-success">Add To Cart</button></div>
+            
+        </div>
+      <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3 men menshirts">
+          <div class="product"> <img src="Images/Men's Pants.jpg" alt="">
+          </div>
+          <div class="title pt-4 pb-1">Men's Chinos</div>
+          <div class="d-flex align-content-center justify-content-center"> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> </div>
+          <div class="price">$ 60.0</div>
+          <div><select class="form-select form-select-sm" aria-label=".form-select-sm">
+            <option selected>Select Size</option>
+            <option value="1">Small</option>
+            <option value="2">Medium</option>
+            <option value="3">Large</option>
+            <option value="4">X-Large</option>
+          </select></div>
+          <div><button type="button" class="btn btn-outline-success">Add To Cart</button></div>
+      </div>
+      <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+          <div class="product"> <img src="Images/Men's Pants 2.jpg" alt="">
+          </div>
+          <div class="title pt-4 pb-1">Men's Street Pants</div>
+          <div class="d-flex align-content-center justify-content-center"> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> </div>
+          <div class="price">$ 55.0</div>
+          <div><select class="form-select form-select-sm" aria-label=".form-select-sm">
+            <option selected>Select Size</option>
+            <option value="1">Small</option>
+            <option value="2">Medium</option>
+            <option value="3">Large</option>
+            <option value="4">X-Large</option>
+          </select></div>
+          <div><button type="button" class="btn btn-outline-success">Add To Cart</button></div>
+      </div>
+      <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+          <div class="product"> <img src="Images/Men's Shorts.jpg" alt="">
+          </div>
+          <div class="title pt-4 pb-1"> Men's Shorts Light</div>
+          <div class="d-flex align-content-center justify-content-center"> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> </div>
+          <div class="price">$ 70.0</div>
+          <div><select class="form-select form-select-sm" aria-label=".form-select-sm">
+            <option selected>Select Size</option>
+            <option value="1">Small</option>
+            <option value="2">Medium</option>
+            <option value="3">Large</option>
+            <option value="4">X-Large</option>
+          </select></div>
+          <div><button type="button" class="btn btn-outline-success">Add To Cart</button></div>
+      </div>
+      <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+          <div class="product"> <img src="Images/Men's Shorts 2.jpg" alt="">
+          </div>
+          <div class="title pt-4 pb-1">Men's Shorts Professional</div>
+          <div class="d-flex align-content-center justify-content-center"> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> </div>
+          <div class="price">$ 60.0</div>
+          <div><select class="form-select form-select-sm" aria-label=".form-select-sm">
+            <option selected>Select Size</option>
+            <option value="1">Small</option>
+            <option value="2">Medium</option>
+            <option value="3">Large</option>
+            <option value="4">X-Large</option>
+          </select></div>
+          <div><button type="button" class="btn btn-outline-success">Add To Cart</button></div>
+          
+      </div>
+      
+    </div>
+    <div id="womens" class="row womens">
+        <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+            <div class="product"> <img src="Images/Women's Sweater.jpg" alt="">
+            </div>
+            <div class="title pt-4 pb-1">Women's winter Sweater</div>
+            <div class="d-flex align-content-center justify-content-center"> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> </div>
+            <div class="price">$ 60.0</div>
+            <div><select class="form-select form-select-sm" aria-label=".form-select-sm">
+              <option selected>Select Size</option>
+              <option value="1">Small</option>
+              <option value="2">Medium</option>
+              <option value="3">Large</option>
+              <option value="4">X-Large</option>
+            </select></div>
+            <div><button type="button" class="btn btn-outline-success">Add To Cart</button></div>
+        </div>
+        <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+            <div class="product"> <img src="Images/Women's Sweater 2.jpg" alt="">
+                <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+            </div>
+            <div class="title pt-4 pb-1">Women's Light Sweater</div>
+            <div class="d-flex align-content-center justify-content-center"> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> </div>
+            <div class="price">$ 55.0</div>
+            <div><select class="form-select form-select-sm" aria-label=".form-select-sm">
+              <option selected>Select Size</option>
+              <option value="1">Small</option>
+              <option value="2">Medium</option>
+              <option value="3">Large</option>
+              <option value="4">X-Large</option>
+            </select></div>
+            <div><button type="button" class="btn btn-outline-success">Add To Cart</button></div>
+        </div>
+        <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+            <div class="product"> <img src="Images/Women's Shirt.jpg" alt="">
+            </div>
+            <div class="title pt-4 pb-1"> Women's Shirt </div>
+            <div class="d-flex align-content-center justify-content-center"> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> </div>
+            <div class="price">$ 70.0</div>
+            <div><select class="form-select form-select-sm" aria-label=".form-select-sm">
+              <option selected>Select Size</option>
+              <option value="1">Small</option>
+              <option value="2">Medium</option>
+              <option value="3">Large</option>
+              <option value="4">X-Large</option>
+            </select></div>
+            <div><button type="button" class="btn btn-outline-success">Add To Cart</button></div>
+        </div>
+        <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+            <div class="product"> <img src="Images/Women's Shirt 2.jpg" alt="">
+            </div>
+            <div class="title pt-4 pb-1">Women's Crop Top</div>
+            <div class="d-flex align-content-center justify-content-center"> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> </div>
+            <div class="price">$ 60.0</div>
+            <div><select class="form-select form-select-sm" aria-label=".form-select-sm">
+              <option selected>Select Size</option>
+              <option value="1">Small</option>
+              <option value="2">Medium</option>
+              <option value="3">Large</option>
+              <option value="4">X-Large</option>
+            </select>
+            <div><button type="button" class="btn btn-outline-success">Add To Cart</button></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+            <div class="product"> <img src="Images/Women's Bell Bottoms.jpg" alt="">
+            </div>
+            <div class="title pt-4 pb-1">Women's Bell Bottoms</div>
+            <div class="d-flex align-content-center justify-content-center"> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> </div>
+            <div class="price">$ 60.0</div>
+            <div><select class="form-select form-select-sm" aria-label=".form-select-sm">
+              <option selected>Select Size</option>
+              <option value="1">Small</option>
+              <option value="2">Medium</option>
+              <option value="3">Large</option>
+              <option value="4">X-Large</option>
+            </select>
+            <div><button type="button" class="btn btn-outline-success">Add To Cart</button></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+          <div class="product"> <img src="Images/Women's Pants 2.jpg" alt="">
+          </div>
+          <div class="title pt-4 pb-1">Women's Casual Pants</div>
+          <div class="d-flex align-content-center justify-content-center"> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> </div>
+          <div class="price">$ 60.0</div>
+          <div><select class="form-select form-select-sm" aria-label=".form-select-sm">
+            <option selected>Select Size</option>
+            <option value="1">Small</option>
+            <option value="2">Medium</option>
+            <option value="3">Large</option>
+            <option value="4">X-Large</option>
+            </select>
+            <div><button type="button" class="btn btn-outline-success">Add To Cart</button></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+          <div class="product"> <img src="Images/Women's Shorts.jpg" alt="">
+          </div>
+          <div class="title pt-4 pb-1">Women's Denim Shorts</div>
+          <div class="d-flex align-content-center justify-content-center"> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> </div>
+          <div class="price">$ 60.0</div>
+          <div><select class="form-select form-select-sm" aria-label=".form-select-sm">
+            <option selected>Select Size</option>
+            <option value="1">Small</option>
+            <option value="2">Medium</option>
+            <option value="3">Large</option>
+            <option value="4">X-Large</option>
+            </select>
+            <div><button type="button" class="btn btn-outline-success">Add To Cart</button></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+          <div class="product"> <img src="Images/Women's Shorts 2.jpg" alt="">
+          </div>
+          <div class="title pt-4 pb-1">Women's Casual Shorts</div>
+          <div class="d-flex align-content-center justify-content-center"> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> </div>
+          <div class="price">$ 60.0</div>
+          <div><select class="form-select form-select-sm" aria-label=".form-select-sm">
+            <option selected>Select Size</option>
+            <option value="1">Small</option>
+            <option value="2">Medium</option>
+            <option value="3">Large</option>
+            <option value="4">X-Large</option>
+            </select>
+            <div><button type="button" class="btn btn-outline-success">Add To Cart</button></div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
