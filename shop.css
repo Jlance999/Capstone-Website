@@ -62,6 +62,31 @@
     }
 }
 
-.form-seperate{
-    border-left: 6px solid rgb(6, 100, 223);
+
+.progresses{
+    display: flex;
+    align-items: center
+}
+
+.line{
+    width: 76px;
+    height: 6px;
+    background: #63d19e;
+}
+
+.steps{
+    display: flex;
+    background-color: #63d19e;
+    color: #fff;
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%
+}
+
+.steps:last-child {
+    color: black;
+    background-color: rgb(206, 206, 206);
 }
