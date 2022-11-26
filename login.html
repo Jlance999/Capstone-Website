@@ -25,6 +25,22 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="shop.css" />
 
+    <!-- Page Specific CSS -->
+    <style>
+      body {
+        background-color: #e0f5ff;
+      }
+
+      .behind-bg {
+        background-color: #ffffff;
+        border-radius: 1rem;
+      }
+
+      .form-seperate {
+        border-left: 6px solid rgb(6, 100, 223);
+      }
+    </style>
+
     <title>Shop</title>
   </head>
   <body>
@@ -115,16 +131,130 @@
     </nav>
 
     <section class="vh-100">
-      <div class="container py-5 h-100">
+      <div class="container py-5 h-100 login-bg">
         <div class="row d-flex align-items-center justify-content-center h-100">
-          <div class="col-md-8 col-lg-7 col-xl-6">
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
-              class="img-fluid"
-              alt="Phone image"
-            />
+          <div
+            class="col-md-7 col-lg-5 col-xl-5 offset-xl-1 form-seperate behind-bg"
+          >
+            <h3>Sign Up</h3>
+            <form action="">
+              <!-- Sign Up Name Field -->
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input
+                      type="text"
+                      id="firstName"
+                      class="form-control form-control-lg"
+                    />
+                    <label class="form-label" for="firstName">First Name</label>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input
+                      type="text"
+                      id="lastName"
+                      class="form-control form-control-lg"
+                    />
+                    <label class="form-label" for="lastName">Last Name</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Sign Up Gender Field -->
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <h6 class="mb-2 pb-1">Gender:</h6>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="femaleGender"
+                      value="option1"
+                      checked
+                    />
+                    <label class="form-check-label" for="femaleGender"
+                      >Female</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="maleGender"
+                      value="option2"
+                    />
+                    <label class="form-check-label" for="maleGender"
+                      >Male</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Sign Up Email/Phone Field -->
+              <div class="row">
+                <div class="col-md-6 mb-4 pb-2">
+                  <div class="form-outline">
+                    <input
+                      type="email"
+                      id="emailAddress"
+                      class="form-control form-control-lg"
+                    />
+                    <label class="form-label" for="emailAddress"
+                      >Email Address</label
+                    >
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4 pb-2">
+                  <div class="form-outline">
+                    <input
+                      type="tel"
+                      id="phoneNumber"
+                      class="form-control form-control-lg"
+                    />
+                    <label class="form-label" for="phoneNumber"
+                      >Phone Number</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Sign Up Password Field -->
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input
+                      type="text"
+                      id="password"
+                      class="form-control form-control-lg"
+                    />
+                    <label class="form-label" for="password">Password</label>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline mb-4">
+                    <input
+                      type="text"
+                      id="repassword"
+                      class="form-control form-control-lg"
+                    />
+                    <label class="form-label" for="repassword"
+                      >Re-Type Password</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
-          <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+
+          <!-- Sign In Form -->
+          <div
+            class="col-md-7 col-lg-5 col-xl-5 offset-xl-1 form-seperate behind-bg"
+          >
+            <h3>Sign-in</h3>
             <form>
               <!-- Email input -->
               <div class="form-outline mb-4">
@@ -164,35 +294,16 @@
                     Remember me
                   </label>
                 </div>
-                <a href="#!">Forgot password?</a>
+                <a href="#">Forgot password?</a>
               </div>
 
               <!-- Submit button -->
               <button type="submit" class="btn btn-primary btn-lg btn-block">
                 Sign in
               </button>
-
-              <div class="divider d-flex align-items-center my-4">
-                <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
-              </div>
-
-              <a
-                class="btn btn-primary btn-lg btn-block"
-                style="background-color: #3b5998"
-                href="#!"
-                role="button"
-              >
-                <i class="fab fa-facebook-f me-2"></i>Continue with Facebook
-              </a>
-              <a
-                class="btn btn-primary btn-lg btn-block"
-                style="background-color: #55acee"
-                href="#!"
-                role="button"
-              >
-                <i class="fab fa-twitter me-2"></i>Continue with Twitter</a
-              >
             </form>
+            <br />
+            <br /><br /><br />
           </div>
         </div>
       </div>
