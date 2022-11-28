@@ -13,3 +13,14 @@ function show_womens() {
 document.getElementById("confirm").onclick = function () {
     location.href = "confirmation.html";
 };
+
+$(document).ready(function () {
+    $.ajax({
+        type: "GET",
+        url: "Backend/backend.php",
+        dataType: "html",
+        success: function(data) {
+            $('#my-data').html()
+        }
+    });
+});
