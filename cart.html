@@ -22,6 +22,9 @@
     <!-- Custom CSS-->
     <link rel="stylesheet" type="text/css" href="shop.css" />
 
+    <!-- Custom JS-->
+    <script src="main.js"></script>
+
     <title>Shop</title>
   </head>
 
@@ -169,7 +172,7 @@
           </div>
           <div class="col-md-8 order-md-1">
             <h4 class="mb-3">Billing address</h4>
-            <form class="needs-validation" novalidate>
+            <form class="needs-validation" action="confirmation.html" novalidate>
               <div class="row">
                 <div class="col-md-6 mb-3">
                   <label for="firstName">First name</label>
@@ -599,7 +602,7 @@
                 </div>
               </div>
               <hr class="mb-4">
-              <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+              <button class="btn btn-primary btn-lg btn-block" id="confirm" type="submit">Continue to checkout</button>
             </form>
           </div>
         </div>
