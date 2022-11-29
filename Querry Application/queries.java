@@ -8,10 +8,10 @@ package ProjectTest;
 		
 		public static void main(String[] args) {
 			//Create url string
-			String url = "jdbc:mysql://localhost:3306/stackproject";
+			String url = "https://master.d356a7mb2taffw.amplifyapp.com/";
 			
-			String username = "root";
-			String pass = "123456789";
+			String username = "admin";
+			String pass = "password";
 			//connect with database fullstack with username and its details
 			try (Connection con = DriverManager.getConnection(url, username, pass);
 					Statement statement = con.createStatement();) {

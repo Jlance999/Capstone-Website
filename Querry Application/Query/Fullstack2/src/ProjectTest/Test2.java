@@ -10,10 +10,10 @@ package ProjectTest;
 
 		public static void main(String[] args) {
 			//Create url string
-			String url = "jdbc:mysql://localhost:3306/stackproject";
+			String url = "jdbc:mysql://database-1caissr7fv3x9.us-east-1.rds.amazonaws.com";
 			
-			String username = "root";
-			String pass = "123456789";
+			String username = "admin";
+			String pass = "password";
 			//connect with database fullstack with username and its details
 			try (Connection con = DriverManager.getConnection(url, username, pass);
 					Statement statement = con.createStatement();) {
