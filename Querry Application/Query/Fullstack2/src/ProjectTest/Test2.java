@@ -10,7 +10,7 @@ package ProjectTest;
 
 		public static void main(String[] args) {
 			//Create url string
-			String url = "jdbc:mysql://database-1.caissr7fv3x9.us-east-1.rds.amazonaws.com";
+			String url = "jdbc:mysql://database-1.caissr7fv3x9.us-east-1.rds.amazonaws.com:3306/StackProject";
 			
 			String username = "admin";
 			String pass = "password";
